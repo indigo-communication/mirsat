@@ -60,16 +60,20 @@ const About = () => {
         </div>
       </section>
 
+      {/* Initiatives Intro */}
+      <section className="py-12">
+        <div className="mirsat-container">
+          <div className="text-center">
+            <p className="text-lg md:text-xl text-foreground">
+              Mirsat aims to fulfill this goal through its initiatives: <strong>Takato'</strong>, and <strong>EFTA</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Initiatives */}
       <section className="mirsat-section bg-muted/30">
         <div className="mirsat-container">
-          <div className="space-y-4 mb-12 text-center">
-            <h2 className="mirsat-heading">Our Initiatives</h2>
-            <p className="text-xl text-muted-foreground">
-              Mirsat aims to fulfill its goal through its initiatives
-            </p>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8">
             <InitiativeCard
               name="Takato'"
@@ -97,20 +101,30 @@ const About = () => {
             <div className="mirsat-divider mx-auto" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-center space-y-4">
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div className="space-y-4">
               <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-primary-foreground">
                 KE
               </div>
-              <h3 className="text-xl font-semibold">Karen El-Haddad</h3>
-              <p className="text-muted-foreground">Co-Founder</p>
+              <div className="text-center">
+                <h3 className="text-xl font-semibold">Karen El-Haddad</h3>
+                <p className="text-muted-foreground">Co-Founder - Brussels</p>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Graphic designer and cultural worker
+                </p>
+              </div>
             </div>
-            <div className="text-center space-y-4">
+            <div className="space-y-4">
               <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-4xl font-bold text-primary-foreground">
                 MA
               </div>
-              <h3 className="text-xl font-semibold">Makram Al Halabi</h3>
-              <p className="text-muted-foreground">Co-Founder</p>
+              <div className="text-center">
+                <h3 className="text-xl font-semibold">Makram Al Halabi</h3>
+                <p className="text-muted-foreground">Co-Founder - Beirut</p>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Technical director, sound engineer, and video journalist
+                </p>
+              </div>
             </div>
           </div>
         </div>

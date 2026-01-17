@@ -41,13 +41,13 @@ const Footer = () => {
             <h4 className="font-semibold text-lg">Get in Touch</h4>
             <div className="space-y-3">
               <a
-                href="https://www.instagram.com/mirsat.asbl/"
+                href="https://www.instagram.com/mirsat.be/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm opacity-80 hover:opacity-100 transition-opacity"
               >
                 <Instagram className="w-4 h-4" />
-                <span>@mirsat.asbl</span>
+                <span>@mirsat.be</span>
               </a>
               <a
                 href="mailto:contact@mirsat.org"
