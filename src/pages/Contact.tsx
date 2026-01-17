@@ -48,7 +48,7 @@ const Contact = () => {
 
                   {/* Instagram */}
                   <a
-                    href="https://www.instagram.com/mirsat.asbl/"
+                    href="https://www.instagram.com/mirsat.be/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-start gap-4 p-4 rounded-xl hover:bg-muted transition-colors duration-300"
@@ -61,7 +61,7 @@ const Contact = () => {
                         Instagram
                         <ExternalLink className="w-3 h-3 opacity-50" />
                       </h3>
-                      <p className="text-muted-foreground">@mirsat.asbl</p>
+                      <p className="text-muted-foreground">@mirsat.be</p>
                     </div>
                   </a>
 
@@ -115,13 +115,13 @@ const Contact = () => {
               and performance.
             </p>
             <a
-              href="https://www.instagram.com/mirsat.asbl/"
+              href="https://www.instagram.com/mirsat.be/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300"
             >
               <Instagram className="w-5 h-5" />
-              <span>Follow @mirsat.asbl</span>
+              <span>Follow @mirsat.be</span>
             </a>
           </div>
         </div>

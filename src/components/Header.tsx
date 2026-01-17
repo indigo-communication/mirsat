@@ -42,7 +42,7 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="https://www.instagram.com/mirsat.asbl/"
+                href="https://www.instagram.com/mirsat.be/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -79,7 +79,7 @@ const Header = () => {
                 </Link>
               ))}
               <a
-                href="https://www.instagram.com/mirsat.asbl/"
+                href="https://www.instagram.com/mirsat.be/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300 py-2"
