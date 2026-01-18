@@ -2,7 +2,11 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import EventCard from "@/components/EventCard";
 import efta2024Image from "@/assets/efta-2024.jpg";
-import showcase1Image from "@/assets/showcase-1.jpg";
+import lightDesignImage from "@/assets/light-design-workshop.jpg";
+import showcaseGrid1 from "@/assets/showcase-grid-1.jpg";
+import showcaseGrid2 from "@/assets/showcase-grid-2.jpg";
+import showcaseGrid3 from "@/assets/showcase-grid-3.jpg";
+import showcaseGrid4 from "@/assets/showcase-grid-4.jpg";
 
 const Index = () => {
   const events = [
@@ -25,7 +29,7 @@ const Index = () => {
       descriptionAr:
         "هذه الورشة من تنظيم \"تقاطع\" من مرساة هي فرصة لغير المحترفين لاكتساب مهارات تقنية جديدة في هذا المجال، وفي نفس الوقت التفكير في تاريخ هذا الفن ومكانته في المسرح. علاء ميناوي هو فنان ومصمم إضاءة هولندي-لبناني-فلسطيني مقيم في أمستردام.",
       instagramLink: "https://www.instagram.com/p/C-arebwpKny/?igsh=MWI4MWoxazFiamRyMw==",
-      image: efta2024Image,
+      image: lightDesignImage,
       featured: false,
     },
     {
@@ -36,7 +40,7 @@ const Index = () => {
       descriptionAr:
         "عرض مرساة المفتوح الأول للفنانين من منطقة الشرق الأوسط وشمال إفريقيا وشتاتها، حيث سيتم تقديم عروض فنية متنوعة من المسرح والموسيقى والشعر. فرصة لاستكشاف وتجربة تنوع الثقافات والمواهب في أجواء مليئة بالإبداع والتفاعل الفني.",
       instagramLink: "https://www.instagram.com/p/C79X5pGMy7P/?igsh=bTdxcDVydTB2Yndw",
-      image: showcase1Image,
+      images: [showcaseGrid1, showcaseGrid2, showcaseGrid3, showcaseGrid4],
       featured: false,
     },
   ];
@@ -49,17 +53,17 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             {/* Logo/Brand */}
             <div className="space-y-4 animate-fade-in">
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-foreground">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground">
                 mirsat
               </h1>
-              <p className="text-3xl md:text-4xl text-muted-foreground arabic">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground arabic">
                 مرساة
               </p>
             </div>
 
             {/* Tagline */}
             <p
-              className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in"
+              className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
               Building bridges between the European cultural scene and artistic practices 
@@ -95,13 +99,13 @@ const Index = () => {
         <div className="mirsat-container">
           <div className="space-y-4 mb-12">
             <div className="flex items-center justify-between">
-              <h2 className="mirsat-heading">Latest Events</h2>
-              <span className="text-xl text-muted-foreground arabic">فعالياتنا</span>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Latest Events</h2>
+              <span className="text-lg text-muted-foreground arabic">فعالياتنا</span>
             </div>
             <div className="mirsat-divider" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {events.map((event, index) => (
               <EventCard key={index} {...event} />
             ))}
@@ -119,11 +123,11 @@ const Index = () => {
       {/* About Preview */}
       <section className="mirsat-section">
         <div className="mirsat-container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
-              <h2 className="mirsat-heading">About Mirsat</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">About Mirsat</h2>
               <div className="mirsat-divider" />
-              <p className="mirsat-body">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Mirsat is a Brussels-based ASBL launched in 2024. We aim to build a bridge 
                 between the European cultural scene and artistic practices that shed light 
                 on the SWANA region. At Mirsat, we believe art has the power to bring 
@@ -136,10 +140,10 @@ const Index = () => {
               </Link>
             </div>
             <div className="space-y-6 text-right" dir="rtl">
-              <h2 className="text-2xl font-semibold text-muted-foreground arabic">
+              <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground arabic">
                 عن مرساة
               </h2>
-              <p className="mirsat-body arabic">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed arabic">
                 مرساة هي جمعية غير ربحية مقرها بروكسل تأسست في عام 2024. نهدف إلى بناء جسر 
                 بين الساحة الثقافية الأوروبية والممارسات الفنية التي تسلط الضوء على منطقة 
                 جنوب غرب آسيا وشمال إفريقيا. نؤمن بأن الفن لديه القدرة على تسليط الضوء على 
