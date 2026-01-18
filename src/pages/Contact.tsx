@@ -7,9 +7,9 @@ const Contact = () => {
       <section className="mirsat-section bg-gradient-to-b from-muted/50 to-background">
         <div className="mirsat-container">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="mirsat-heading">Contact Us</h1>
-            <p className="text-2xl text-muted-foreground arabic">تواصل معنا</p>
-            <p className="mirsat-body max-w-2xl mx-auto">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground">Contact Us</h1>
+            <p className="text-xl text-muted-foreground arabic">تواصل معنا</p>
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               We'd love to hear from you. Whether you're interested in collaborating, 
               participating in our events, or just want to say hello.
             </p>
