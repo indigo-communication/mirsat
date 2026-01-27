@@ -1,6 +1,4 @@
-import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
-import EventCard from "@/components/EventCard";
+import { ExternalLink } from "lucide-react";
 import efta2024Image from "@/assets/efta-2024.jpg";
 import lightDesignImage from "@/assets/light-design-workshop.jpg";
 import showcaseGrid1 from "@/assets/showcase-grid-1.jpg";
@@ -9,151 +7,216 @@ import showcaseGrid3 from "@/assets/showcase-grid-3.jpg";
 import showcaseGrid4 from "@/assets/showcase-grid-4.jpg";
 
 const Index = () => {
-  const events = [
-    {
-      title: "EFTA 2024",
-      subtitle: "The Arab Theatre Festival in Europe for 2024",
-      descriptionEn:
-        "Mirsat's first edition of the EFTA 2024 Festival. This event will feature a dialogue session, interactive workshops, storytelling performance, documentary screenings, and a showcase event. We hope this festival fosters meaningful conversations and solidarity with our communities in Palestine and Lebanon in light of the ongoing Israeli aggressions.",
-      descriptionAr:
-        "النسخة الأولى من مهرجان المسرح العربي EFTA 2024 يتضمن المهرجان مجموعة من الفعاليات، بما في ذلك جلسات حوار، ورش عمل تفاعلية، عرض مسرحي حكواتي، عرض أفلام وثائقية وعرض فنون مسرحية. نتمنى أن يكون هذا المهرجان فرصة للتلاقي، الحوار، وتعزيز التماسك في ظل العدوان الإسرائيلي المستمر على أهلنا في فلسطين ولبنان.",
-      instagramLink: "https://www.instagram.com/p/DBGaSmJOjkP/?igsh=MW11bmRmYXNidnJvbg==",
-      image: efta2024Image,
-      featured: true,
-    },
-    {
-      title: "LIGHT DESIGN FOR THEATRE WORKSHOP",
-      subtitle: "A Takato' Workshop with Alaa Minawi",
-      descriptionEn:
-        "Organized by Mirsat's initiative Takato', with Alaa Minawi, the light design for theatre workshop offered an opportunity for non-professionals to acquire new technical skills in the field, all the while reflecting on its history and place in theatre.",
-      descriptionAr:
-        "هذه الورشة من تنظيم \"تقاطع\" من مرساة هي فرصة لغير المحترفين لاكتساب مهارات تقنية جديدة في هذا المجال، وفي نفس الوقت التفكير في تاريخ هذا الفن ومكانته في المسرح. علاء ميناوي هو فنان ومصمم إضاءة هولندي-لبناني-فلسطيني مقيم في أمستردام.",
-      instagramLink: "https://www.instagram.com/p/C-arebwpKny/?igsh=MWI4MWoxazFiamRyMw==",
-      image: lightDesignImage,
-      featured: false,
-    },
-    {
-      title: "SHOWCASE",
-      subtitle: "Mirsat's June 2024 Showcase",
-      descriptionEn:
-        "For Mirsat's first Showcase event, we're giving the stage to performers from the SWANA region and its diaspora. Ranging from theatre performances, dance, slam, and so much more.",
-      descriptionAr:
-        "عرض مرساة المفتوح الأول للفنانين من منطقة الشرق الأوسط وشمال إفريقيا وشتاتها، حيث سيتم تقديم عروض فنية متنوعة من المسرح والموسيقى والشعر. فرصة لاستكشاف وتجربة تنوع الثقافات والمواهب في أجواء مليئة بالإبداع والتفاعل الفني.",
-      instagramLink: "https://www.instagram.com/p/C79X5pGMy7P/?igsh=bTdxcDVydTB2Yndw",
-      images: [showcaseGrid1, showcaseGrid2, showcaseGrid3, showcaseGrid4],
-      featured: false,
-    },
-  ];
-
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted">
-        <div className="mirsat-container py-32">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* Logo/Brand */}
-            <div className="space-y-4 animate-fade-in">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground">
-                mirsat
-              </h1>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground arabic">
-                مرساة
-              </p>
-            </div>
+    <div className="min-h-screen bg-background">
+      {/* EFTA 2024 - Full width banner with centered text below */}
+      <section className="w-full">
+        {/* Banner Image - Full width */}
+        <a
+          href="https://www.instagram.com/p/DBGaSmJOjkP/?igsh=MW11bmRmYXNidnJvbg=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <img
+            src={efta2024Image}
+            alt="EFTA 2024 - Arab Theatre Festival in Europe"
+            className="w-full h-auto"
+          />
+        </a>
 
-            {/* Tagline */}
-            <p
-              className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in"
-              style={{ animationDelay: "0.2s" }}
+        {/* Centered text content */}
+        <div className="max-w-3xl mx-auto px-6 py-12 text-center">
+          <a
+            href="https://www.instagram.com/p/DBGaSmJOjkP/?igsh=MW11bmRmYXNidnJvbg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className="text-[22px] font-bold text-foreground mb-2 hover:text-primary transition-colors">
+              EFTA 2024
+            </h2>
+          </a>
+          <a
+            href="https://www.instagram.com/p/DBGaSmJOjkP/?igsh=MW11bmRmYXNidnJvbg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className="text-[16px] text-muted-foreground mb-4 hover:text-primary transition-colors">
+              The Arab Theatre Festival in Europe for 2024
+            </h3>
+          </a>
+          
+          {/* Divider line */}
+          <div className="w-24 h-[2px] bg-primary mx-auto mb-6" />
+          
+          {/* English description */}
+          <p className="text-[14px] text-muted-foreground leading-relaxed mb-4">
+            Mirsat's first edition of the EFTA 2024 Festival. This event will feature a dialogue session, 
+            interactive workshops, storytelling performance, documentary screenings, and a showcase event. 
+            We hope this festival fosters meaningful conversations and solidarity with our communities in 
+            Palestine and Lebanon in light of the ongoing Israeli aggressions.
+          </p>
+          
+          {/* Arabic description */}
+          <p className="text-[14px] text-muted-foreground leading-relaxed mb-6 arabic text-center" dir="rtl">
+            النسخة الأولى من مهرجان المسرح العربي EFTA 2024 يتضمن المهرجان مجموعة من الفعاليات، بما في 
+            ذلك جلسات حوار، ورش عمل تفاعلية، عرض مسرحي حكواتي، عرض أفلام وثائقية وعرض فنون مسرحية. 
+            نتمنى أن يكون هذا المهرجان فرصة للتلاقي، الحوار، وتعزيز التماسك في ظل العدوان الإسرائيلي 
+            المستمر على أهلنا في فلسطين ولبنان.
+          </p>
+          
+          {/* Instagram link */}
+          <a
+            href="https://www.instagram.com/p/DBGaSmJOjkP/?igsh=MW11bmRmYXNidnJvbg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-[13px] text-foreground hover:text-primary transition-colors tracking-wider"
+          >
+            <span>Visit our Instagram for more Info</span>
+          </a>
+        </div>
+      </section>
+
+      {/* Spacer */}
+      <div className="py-8" />
+
+      {/* LIGHT DESIGN WORKSHOP - Side by side: Image left, Text right */}
+      <section className="max-w-4xl mx-auto px-6 py-8">
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+          {/* Square image on left */}
+          <div className="w-full md:w-[280px] flex-shrink-0">
+            <a
+              href="https://www.instagram.com/p/C-arebwpKny/?igsh=MWI4MWoxazFiamRyMw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
             >
-              Building bridges between the European cultural scene and artistic practices 
-              from the SWANA region
+              <img
+                src={lightDesignImage}
+                alt="Light Design for Theatre Workshop"
+                className="w-full aspect-square object-cover"
+              />
+            </a>
+          </div>
+          
+          {/* Text content on right */}
+          <div className="flex-1">
+            <h1 className="text-[19px] font-bold text-foreground mb-2 tracking-tight">
+              LIGHT DESIGN FOR THEATRE WORKSHOP
+            </h1>
+            <h3 className="text-[14px] text-muted-foreground mb-3">
+              A Takato' Workshop with Alaa Minawi
+            </h3>
+            
+            {/* Divider */}
+            <div className="w-16 h-[2px] bg-primary mb-4" />
+            
+            {/* English description */}
+            <p className="text-[13px] text-muted-foreground leading-relaxed mb-4">
+              Organized by Mirsat's initiative Takato', with Alaa Minawi, the light design for theatre 
+              workshop offered an opportunity for non-professionals to acquire new technical skills in 
+              the field, all the while reflecting on its history and place in theatre.
             </p>
-
-            {/* CTA */}
-            <div
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
-              style={{ animationDelay: "0.4s" }}
+            
+            {/* Arabic description */}
+            <p className="text-[13px] text-muted-foreground leading-relaxed mb-4 arabic text-right" dir="rtl">
+              هذه الورشة من تنظيم "تقاطع" من مرساة هي فرصة لغير المحترفين لاكتساب مهارات تقنية جديدة 
+              في هذا المجال، وفي نفس الوقت التفكير في تاريخ هذا الفن ومكانته في المسرح. علاء ميناوي 
+              هو فنان ومصمم إضاءة هولندي-لبناني-فلسطيني مقيم في أمستردام.
+            </p>
+            
+            {/* Instagram link */}
+            <a
+              href="https://www.instagram.com/p/C-arebwpKny/?igsh=MWI4MWoxazFiamRyMw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[12px] text-foreground hover:text-primary transition-colors tracking-wider"
             >
-              <Link to="/about" className="mirsat-button group">
-                <span>Discover Our Story</span>
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link to="/events" className="mirsat-button-secondary">
-                View Events
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-2 bg-muted-foreground/30 rounded-full" />
+              <span>Visit our Instagram for more Info</span>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Events Section */}
-      <section className="mirsat-section bg-muted/30">
-        <div className="mirsat-container">
-          <div className="space-y-4 mb-12">
-            <div className="flex items-center justify-between">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Latest Events</h2>
-              <span className="text-lg text-muted-foreground arabic">فعالياتنا</span>
-            </div>
-            <div className="mirsat-divider" />
-          </div>
+      {/* Spacer */}
+      <div className="py-8" />
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {events.map((event, index) => (
-              <EventCard key={index} {...event} />
-            ))}
+      {/* SHOWCASE - Side by side: 2x2 Grid image left, Text right */}
+      <section className="max-w-4xl mx-auto px-6 py-8">
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+          {/* 2x2 Grid image on left */}
+          <div className="w-full md:w-[280px] flex-shrink-0">
+            <a
+              href="https://www.instagram.com/p/C79X5pGMy7P/?igsh=bTdxcDVydTB2Yndw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="grid grid-cols-2 gap-[2px] aspect-square">
+                <img
+                  src={showcaseGrid1}
+                  alt="Showcase 1"
+                  className="w-full h-full object-cover"
+                />
+                <img
+                  src={showcaseGrid2}
+                  alt="Showcase 2"
+                  className="w-full h-full object-cover"
+                />
+                <img
+                  src={showcaseGrid3}
+                  alt="Showcase 3"
+                  className="w-full h-full object-cover"
+                />
+                <img
+                  src={showcaseGrid4}
+                  alt="Showcase 4"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </a>
           </div>
-
-          <div className="mt-12 text-center">
-            <Link to="/events" className="mirsat-button group">
-              <span>View All Events</span>
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
+          
+          {/* Text content on right */}
+          <div className="flex-1">
+            <h2 className="text-[19px] font-bold text-foreground mb-2 tracking-tight">
+              SHOWCASE
+            </h2>
+            <h3 className="text-[14px] text-muted-foreground mb-3">
+              Mirsat's June 2024 Showcase
+            </h3>
+            
+            {/* Divider */}
+            <div className="w-16 h-[2px] bg-primary mb-4" />
+            
+            {/* English description */}
+            <p className="text-[13px] text-muted-foreground leading-relaxed mb-4">
+              For Mirsat's first Showcase event, we're giving the stage to performers from the SWANA 
+              region and its diaspora. Ranging from theatre performances, dance, slam, and so much more.
+            </p>
+            
+            {/* Arabic description */}
+            <p className="text-[13px] text-muted-foreground leading-relaxed mb-4 arabic text-right" dir="rtl">
+              عرض مرساة المفتوح الأول للفنانين من منطقة الشرق الأوسط وشمال إفريقيا وشتاتها، حيث سيتم 
+              تقديم عروض فنية متنوعة من المسرح والموسيقى والشعر. فرصة لاستكشاف وتجربة تنوع الثقافات 
+              والمواهب في أجواء مليئة بالإبداع والتفاعل الفني.
+            </p>
+            
+            {/* Instagram link */}
+            <a
+              href="https://www.instagram.com/p/C79X5pGMy7P/?igsh=bTdxcDVydTB2Yndw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[12px] text-foreground hover:text-primary transition-colors tracking-wider"
+            >
+              <span>Visit our Instagram for more Info</span>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* About Preview */}
-      <section className="mirsat-section">
-        <div className="mirsat-container">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">About Mirsat</h2>
-              <div className="mirsat-divider" />
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Mirsat is a Brussels-based ASBL launched in 2024. We aim to build a bridge 
-                between the European cultural scene and artistic practices that shed light 
-                on the SWANA region. At Mirsat, we believe art has the power to bring 
-                awareness to different socio-political realities and emancipate its subjects 
-                from stereotypes and misperceptions.
-              </p>
-              <Link to="/about" className="mirsat-link inline-flex items-center gap-2 group">
-                <span>Learn more about us</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-            <div className="space-y-6 text-right" dir="rtl">
-              <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground arabic">
-                عن مرساة
-              </h2>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed arabic">
-                مرساة هي جمعية غير ربحية مقرها بروكسل تأسست في عام 2024. نهدف إلى بناء جسر 
-                بين الساحة الثقافية الأوروبية والممارسات الفنية التي تسلط الضوء على منطقة 
-                جنوب غرب آسيا وشمال إفريقيا. نؤمن بأن الفن لديه القدرة على تسليط الضوء على 
-                الحقائق الاجتماعية والسياسية المختلفة وتحرير موضوعاتها من الصور النمطية 
-                والمفاهيم الخاطئة.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Bottom spacer */}
+      <div className="py-16" />
     </div>
   );
 };
