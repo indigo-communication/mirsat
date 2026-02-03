@@ -1,0 +1,5 @@
+﻿https://storage.googleapis.com/xprs_resources/fonts/helveticaneuethn-webfont.eot
+https://storage.googleapis.com/xprs_resources/fonts/helveticaneuethn-webfont.eot?iefix
+https://storage.googleapis.com/xprs_resources/fonts/helveticaneuethn-webfont.woff
+https://storage.googleapis.com/xprs_resources/fonts/helveticaneuethn-webfont.ttf
+https://storage.googleapis.com/xprs_resources/fonts/helveticaneuethn-webfont.svg#webfontJR0GaG5Z

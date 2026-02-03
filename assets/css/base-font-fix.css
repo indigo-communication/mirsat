@@ -1,0 +1,18 @@
+/* Base font-size fix for proper rem calculation */
+html {
+    font-size: 1px;
+}
+
+/* Override for tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 0.7px;
+    }
+}
+
+/* Override for mobile */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 0.5px;
+    }
+}
