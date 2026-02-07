@@ -1,21 +1,21 @@
 # .htaccess for Mirsat Organisation
-# www.mirsat.com
+# www.mirsat.org
 
 # Enable rewrite engine
 RewriteEngine On
 
-# Force HTTPS (uncomment after deployment)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS (enabled for production)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Force www (or remove www, choose one)
 # Force www:
 # RewriteCond %{HTTP_HOST} !^www\. [NC]
 # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Remove www (if preferred):
-# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-# RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
+# Remove www (enabled for mirsat.org):
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
 
 # Default index file
 DirectoryIndex index.html index.php

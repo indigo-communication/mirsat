@@ -1,7 +1,7 @@
 ﻿# Mirsat Organisation - Deployment Package
-Domain: www.mirsat.com
+Domain: www.mirsat.org
 Email: admin@mirsat.org
-Date: 2026-02-03
+Date: 2026-02-07
 
 ## Files Included
 - index.html (production-ready with HTTPS redirect)
@@ -32,7 +32,7 @@ Date: 2026-02-03
 - Update email address in contact_handler.php if needed
 
 ### 5. Verify
-- Check https://www.mirsat.com loads correctly
+- Check https://www.mirsat.org loads correctly
 - Verify all images display
 - Test navigation
 - Check responsive design on mobile
@@ -44,4 +44,4 @@ Date: 2026-02-03
 - Social media links are configured
 
 ## Support
-Contact: info@mirsat.com
+Contact: admin@mirsat.org

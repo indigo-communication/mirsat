@@ -63,7 +63,7 @@ Date: $(Get-Date -Format "yyyy-MM-dd")
 - Social media links are configured
 
 ## Support
-Contact: info@mirsat.com
+Contact: info@mirsat.org
 "@
 
 Set-Content "DEPLOYMENT_README.txt" $deployReadme -Encoding UTF8
