@@ -52,6 +52,29 @@ DirectoryIndex index.html index.php
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
+    # Only set HTML content type for HTML files
+    <FilesMatch "\.(html|htm)$">
+        Header set Content-Type "text/html; charset=UTF-8"
+    </FilesMatch>
+</IfModule>
+
+# Force UTF-8 encoding for text files
+AddDefaultCharset UTF-8
+
+# Set correct MIME types
+<IfModule mod_mime.c>
+    # CSS files
+    AddType text/css .css
+    # JavaScript files  
+    AddType application/javascript .js
+    AddType text/javascript .js
+    # Font files
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    # Image files
+    AddType image/svg+xml .svg
 </IfModule>
 
 # Error pages (uncomment and create these pages if needed)
